@@ -15,7 +15,7 @@ const VideoFondo = () => {
 
 function Content() {
     return (
-      <div className='flex flex-col gap-4 absolute top-0 z-10 w-full'>
+      <section className='flex flex-col gap-4 absolute top-0 z-10 w-full'>
         
         <VideoFondo/>
 
@@ -29,7 +29,7 @@ function Content() {
         </div>
 
         <InfoDetails/>
-      </div>
+      </section>
     );
 }
 
