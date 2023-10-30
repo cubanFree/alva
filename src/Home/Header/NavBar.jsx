@@ -7,7 +7,6 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "About",
     "Contact"
   ];
 
@@ -28,14 +27,14 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-opacity-25 bg-black z-20 w-full relative">
+    <nav className="bg-opacity-10 bg-black z-20 w-full relative border-b-1 border-gray-900">
 
       <ul className="justify-between flex text-gray-300 md:px-[15%] px-[10%] py-2 m-0 relative">
         <li className="md:hidden flex justify-start z-20">
           <div className="flex justify-center items-center">
             <GoChevronRight className={"cursor-pointer" + (isMenuOpen ? " rotate-90" : "")} onClick={() => setIsMenuOpen(!isMenuOpen)} size={30} />
             {isMenuOpen && (
-              <div className="flex flex-col gap-2 text-lg font-semibold absolute bottom-[-190%] left-0 min-w-[30%] bg-gray-800 text-end p-3 rounded-md">
+              <div className="flex flex-col gap-2 text-lg font-semibold absolute bottom-[-4rem] left-0 min-w-[30%] bg-gray-800 text-end p-3 rounded-e-lg">
                 {menuItems.map((item, index) => (
                   <span 
                     key={`${item}-${index}`}
@@ -61,15 +60,6 @@ export default function NavBar() {
 
         <li className="hidden md:flex">
           <div className="flex justify-center items-center gap-3 font-semibold">
-            <span 
-              className="cursor-pointer hover:text-gray-400" 
-              onClick={(e) => {
-                e.preventDefault(); 
-                scrollToElement("about")
-                }}
-              >
-                About
-            </span>
             <span 
               className="cursor-pointer hover:text-gray-400" 
               onClick={(e) => {

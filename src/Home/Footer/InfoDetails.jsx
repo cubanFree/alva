@@ -6,7 +6,7 @@ import {BsWhatsapp} from 'react-icons/bs'
 
 function InfoDetails() {
   return (
-    <section className='flex flex-col w-full bg-black p-2 justify-center items-center gap-2 z-20'>
+    <section className='flex flex-col w-full bg-black font-semibold p-4 justify-center items-center gap-2 z-20'>
       <div className='flex justify-center items-center gap-4'>
         <Link to="https://github.com/cubanFree" target="_blank" className='custom-icons'>
             <BiLogoGithub color='gray' size={30}/>
@@ -17,9 +17,9 @@ function InfoDetails() {
         <Link to="https://www.instagram.com/aa_fonts/" target="_blank" className='custom-icons'>
             <AiFillInstagram color='gray' size={30}/>
         </Link>
-        <div className='flex gap-2 border-1 border-gray-600 rounded-md p-2'>
+        <div className='flex justify-center items-center gap-2 border-1 border-gray-600 rounded-md p-2'>
           <BsWhatsapp color='gray' size={25}/>
-          <span className='text-gray-400'>+1 626 955 6895</span>
+          <span className='text-gray-400 md:text-lg text-sm'>+1 626 955 6895</span>
         </div>
       </div>
       <div className='flex justify-center items-center'>
