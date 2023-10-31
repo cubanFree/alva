@@ -1,5 +1,4 @@
 import Fondo from '../../assets/fondo.jpg';
-import ImgAbout from './ImgAbout';
 import InfoAbout from './InfoAbout';
 import Skills from './Skills';
 import InfoDetails from '../Footer/InfoDetails';
@@ -13,21 +12,22 @@ function Content() {
             className='z-0 object-cover w-full min-h-screen' 
             src={Fondo}
           />
-          <span className='absolute text-white md:text-6xl text-3xl top-1/4 left-1/2 md:left-1/3 -translate-x-1/2 -translate-y-1/2 font-body'>
+          <span className='w-full absolute text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl top-1/4 text-center md:right-1/4 font-body'>
             Just do it.
           </span>
         </div>
 
-        <div className='md:flex block justify-center gap-4 w-full px-3' id='contact'>
-          <ImgAbout/>
+        <div className='flex justify-center md:gap-4 w-full px-3' id='contact'>
           <InfoAbout/>
         </div>
 
-        <div className='flex flex-col gap-3 w-full'>
+        <div>
           <Skills />
         </div>
 
-        <InfoDetails/>
+        <div>
+          <InfoDetails/>
+        </div>
       </section>
     );
 }

@@ -3,7 +3,6 @@ import { BiLogoReact } from 'react-icons/bi';
 import { BsGit } from 'react-icons/bs';
 import { FaBootstrap } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
-import { BiLogoJavascript } from 'react-icons/bi';
 import { BiLogoTailwindCss } from 'react-icons/bi';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
@@ -21,13 +20,12 @@ const CustomCard = ({title, children}) => (
 
 function Skills() {
   return (
-    <div className='md:flex md:gap-5 inline-grid justify-center items-center w-full px-3 gap-1'>
+    <div className='md:flex md:gap-5 inline-grid justify-center w-full px-3 gap-4'>
       <CustomCard title={"Skills"}>
         <BiLogoReact size={40} color='white'/>
         <BsGit size={40} color='white'/>
         <FaBootstrap size={40} color='white'/>
         <FaNodeJs size={40} color='white'/>
-        <BiLogoJavascript size={40} color='white'/>
         <BiLogoTailwindCss size={40} color='white'/>
         <BiLogoMongodb size={40} color='white'/>
       </CustomCard>
